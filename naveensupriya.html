@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naveen Kumar.P & Supriya.S | Wedding Invitation</title>
+<meta name="description" content="Celebrate the engagement and wedding of Naveen Kumar.P and Supriya.S on October 24 and 25, 2026.">
+
+<style>
+:root {
+  --navy: #124C55;
+  --teal: #359FA0;
+  --mint: #8AD6D1;
+  --gold: #D7B56D;
+  --cream: #FFF0C5;
+  --coral: #FF8C52;
+  --text: #44352D;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #FFFCF5;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+a { text-decoration: none; }
+
+.navbar {
+  background: var(--navy);
+  padding: 15px 12px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  font: 12px Arial, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.navbar a:hover { color: var(--cream); }
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 45px 25px;
+  position: relative;
+  color: white;
+  background:
+    linear-gradient(135deg, rgba(10,55,62,.76), rgba(18,76,85,.42)),
+    url("wedding.png") center/cover no-repeat,
+    var(--navy);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid var(--gold);
+  pointer-events: none;
+}
+
+.hero-card {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+}
+
+.eyebrow {
+  color: var(--cream);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+h1 {
+  font-size: clamp(40px, 8vw, 78px);
+  font-weight: 400;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.amp { color: var(--gold); font-style: italic; }
+
+.subtitle {
+  margin-top: 22px;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.date-badge {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 24px;
+  border: 1px solid var(--gold);
+  border-radius: 30px;
+  color: var(--cream);
+  letter-spacing: 2px;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-btn {
+  padding: 11px 20px;
+  border: 1px solid var(--gold);
+  border-radius: 30px;
+  color: white;
+  background: rgba(18,76,85,.75);
+  font: 13px Arial, sans-serif;
+}
+
+.hero-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.scroll {
+  margin-top: 35px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.section { padding: 75px 20px; }
+
+.section.alt {
+  background: linear-gradient(135deg, #E7F7F3, #FFF8E8, #E5F2F5);
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(29px, 5vw, 42px);
+  color: var(--navy);
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.section-lead {
+  text-align: center;
+  color: #8B755A;
+  max-width: 700px;
+  margin: 0 auto 38px;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 24px;
+}
+
+.event {
+  text-align: center;
+  padding: 30px 20px;
+  background: white;
+  border: 1px solid var(--gold);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px #124C5512;
+}
+
+.event .icon { font-size: 38px; }
+.event h3 { color: #A9843E; font-size: 27px; font-weight: 400; }
+.event .time { color: #8C7761; font-style: italic; }
+
+.venue {
+  text-align: center;
+  padding: 30px 18px;
+  margin-top: 28px;
+  background: linear-gradient(135deg, #FFFFFF, #E4F6F2);
+  border: 1px solid var(--gold);
+  border-radius: 18px;
+}
+
+.venue h3 {
+  color: var(--navy);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.venue p { overflow-wrap: anywhere; }
+
+.map-btn, .action-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 11px 23px;
+  border-radius: 30px;
+  background: var(--navy);
+  color: white;
+  font: 14px Arial, sans-serif;
+}
+
+.map-btn:hover, .action-btn:hover { background: var(--teal); }
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 15px;
+  max-width: 720px;
+  margin: 30px auto 0;
+}
+
+.count-box {
+  text-align: center;
+  background: white;
+  border: 1px solid var(--gold);
+  border-radius: 15px;
+  padding: 22px 8px;
+}
+
+.count-box strong {
+  display: block;
+  color: var(--navy);
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.count-box span {
+  font: 11px Arial, sans-serif;
+  letter-spacing: 1.5px;
+  color: #987E56;
+  text-transform: uppercase;
+}
+
+/* INVITATION */
+
+.invitation-section {
+  background: linear-gradient(135deg, #FFF5DF, #DDF4EF, #FFF0E7);
+}
+
+.invitation-wrap {
+  max-width: 650px;
+  margin: 30px auto 0;
+  padding: 10px;
+  background: linear-gradient(135deg, #A77D35, #FFF0BD, #C7A45D);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px #124C5520;
+}
+
+.invitation-link {
+  display: block;
+  line-height: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+}
+
+.invitation-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.invitation-hint {
+  text-align: center;
+  margin-top: 17px;
+  color: var(--navy);
+}
+
+.invitation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* PERSONAL MESSAGE */
+
+.message {
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+  font-size: 21px;
+  font-style: italic;
+  color: #705B46;
+}
+
+/* UNIQUE WEDDING GALLERY */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 25px;
+  margin-top: 38px;
+  align-items: stretch;
+}
+
+.memory-card {
+  --card-bg: #F8DDE5;
+  --card-accent: #8B435B;
+  --card-gold: #E7C17B;
+
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 9px;
+  border-radius: 23px;
+  background: linear-gradient(145deg, var(--card-gold), #FFF9E8, var(--card-gold));
+  box-shadow: 0 14px 32px #124C551A;
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.memory-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 22px 42px #124C552B;
+}
+
+/* Different colors for each memory */
+.memory-card.love {
+  --card-bg: #F7DCE5;
+  --card-accent: #743D56;
+  --card-gold: #D7A0AF;
+}
+
+.memory-card.engagement {
+  --card-bg: #FFE1CF;
+  --card-accent: #85452E;
+  --card-gold: #E7A16C;
+}
+
+.memory-card.wedding {
+  --card-bg: #D7F0E9;
+  --card-accent: #155A59;
+  --card-gold: #8BC6B8;
+}
+
+.memory-photo {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 17px;
+  background: var(--card-bg);
+}
+
+.memory-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .6s ease;
+}
+
+.memory-card:hover .memory-photo img {
+  transform: scale(1.06);
+}
+
+/* Soft gradient over the bottom of each photo */
+.memory-photo::after {
+  content: "";
+  position: absolute;
+  inset: 35% 0 0;
+  background: linear-gradient(transparent, rgba(16,39,42,.45));
+  pointer-events: none;
+}
+
+.memory-content {
+  position: relative;
+  padding: 22px 13px 24px;
+  margin-top: 9px;
+  text-align: center;
+  min-height: 225px;
+  border-radius: 15px;
+  background: var(--card-bg);
+  color: var(--card-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.memory-symbol {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.memory-label {
+  font: 10px Arial, sans-serif;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  opacity: .85;
+  margin-bottom: 9px;
+}
+
+.memory-content h3 {
+  font-size: clamp(19px, 2vw, 25px);
+  line-height: 1.3;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.memory-divider {
+  width: 50px;
+  height: 1px;
+  background: var(--card-gold);
+  margin: 0 auto 12px;
+}
+
+.memory-quote {
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.memory-tamil {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.8;
+  font-family: "Noto Serif Tamil", "Latha", serif;
+  overflow-wrap: anywhere;
+}
+
+.memory-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: rgba(18,76,85,.65);
+  font-size: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  background: var(--navy);
+  color: #FFF4DB;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.heart { color: #FFB7C5; }
+
+@media (max-width: 800px) {
+  .gallery { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+@media (max-width: 700px) {
+  .navbar { gap: 14px; }
+  .navbar a { font-size: 10px; }
+  .hero { min-height: 85vh; padding: 35px 22px; }
+  .hero::before { inset: 12px; }
+  .eyebrow { letter-spacing: 2px; }
+  .subtitle { font-size: 12px; letter-spacing: 2px; }
+  .events { grid-template-columns: 1fr; }
+  .countdown { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .section { padding: 55px 15px; }
+  .memory-content { min-height: 220px; padding: 18px 10px; }
+  .memory-quote { font-size: 14px; }
+  .memory-tamil { font-size: 12px; }
+  .message { font-size: 18px; }
+}
+
+@media (max-width: 420px) {
+  .gallery { grid-template-columns: 1fr; gap: 22px; }
+  .memory-content { min-height: 200px; padding: 22px 15px; }
+  .memory-content h3 { font-size: 24px; }
+  .memory-quote { font-size: 16px; }
+  .memory-tamil { font-size: 14px; }
+  .date-badge { font-size: 12px; letter-spacing: 1px; padding: 10px 15px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="#home">HOME</a>
+  <a href="#events">EVENTS</a>
+  <a href="#invitation">INVITATION</a>
+  <a href="#gallery">GALLERY</a>
+  <a href="#venue">VENUE</a>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-card">
+    <div class="eyebrow">Together with their families</div>
+
+    <h1>
+      Naveen Kumar.P
+      <span class="amp">&amp;</span><br>
+      Supriya.S
+    </h1>
+
+    <p class="subtitle">ARE GETTING MARRIED</p>
+    <div class="date-badge">24 &amp; 25 OCTOBER 2026</div>
+
+    <div class="hero-buttons">
+      <a class="hero-btn" href="#invitation">💌 View Invitation</a>
+      <a class="hero-btn" href="#events">✨ Wedding Details</a>
+    </div>
+
+    <div class="scroll">Scroll to celebrate ↓</div>
+  </div>
+</section>
+
+<section class="section" id="events">
+  <div class="container">
+    <h2 class="section-title">Our Special Days</h2>
+    <p class="section-lead">Two beautiful moments, one beautiful beginning.</p>
+
+    <div class="events">
+      <div class="event">
+        <div class="icon">💍</div>
+        <h3>Engagement</h3>
+        <div>Saturday, 24 October 2026</div>
+        <div class="time">07:00 PM Onwards</div>
+      </div>
+
+      <div class="event">
+        <div class="icon">💒</div>
+        <h3>Wedding</h3>
+        <div>Sunday, 25 October 2026</div>
+        <div class="time">07:45 AM to 09:00 AM</div>
+      </div>
+    </div>
+
+    <div class="venue" id="venue">
+      <h3>T. Chinna Thambi Thirumana Mahal</h3>
+      <p>92Q7+52X, Seelapadi, Tamil Nadu 624005</p>
+      <a class="map-btn"
+         href="https://www.google.com/maps/search/?api=1&query=92Q7%2B52X%2C%20Seelapadi%2C%20Tamil%20Nadu%20624005"
+         target="_blank" rel="noopener">
+        📍 Open in Google Maps
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <h2 class="section-title">Countdown to Our Wedding</h2>
+    <p class="section-lead">The wait is almost over!</p>
+
+    <div class="countdown">
+      <div class="count-box"><strong id="days">0</strong><span>Days</span></div>
+      <div class="count-box"><strong id="hours">0</strong><span>Hours</span></div>
+      <div class="count-box"><strong id="minutes">0</strong><span>Minutes</span></div>
+      <div class="count-box"><strong id="seconds">0</strong><span>Seconds</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section invitation-section" id="invitation">
+  <div class="container">
+    <h2 class="section-title">Our Wedding Invitation</h2>
+    <p class="section-lead">With love in our hearts, we invite you to celebrate our special day.</p>
+
+    <div class="invitation-wrap">
+      <a class="invitation-link" href="in.png" target="_blank" rel="noopener">
+        <img class="invitation-image" src="in.png"
+             alt="Wedding invitation card of Naveen Kumar.P and Supriya.S"
+             loading="lazy">
+      </a>
+    </div>
+
+    <p class="invitation-hint">💌 Tap the card to view the full invitation</p>
+
+    <div class="invitation-actions">
+      <a class="action-btn" href="in.png" target="_blank" rel="noopener">View Full Invitation ↗</a>
+      <a class="action-btn" href="in.png" download="Naveen-Supriya-Wedding-Invitation.png">Download Invitation ↓</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">A Little Note</h2>
+    <p class="message">
+      “Two hearts, two families, and a lifetime of beautiful memories ahead.
+      We warmly invite you to celebrate the engagement and wedding of
+      Naveen Kumar.P &amp; Supriya.S and bless their new journey together.”
+    </p>
+  </div>
+</section>
+
+<!-- UNIQUE PHOTO GALLERY -->
+
+<section class="section alt" id="gallery">
+  <div class="container">
+    <h2 class="section-title">Our Beautiful Memories</h2>
+    <p class="section-lead">Every picture tells a little story of love.</p>
+
+    <div class="gallery">
+
+      <!-- COUPLE PHOTO -->
+      <article class="memory-card love">
+        <span class="memory-number">01</span>
+        <a class="memory-photo" href="4.jpeg" target="_blank" rel="noopener">
+          <img src="4.jpeg" alt="Naveen Kumar and Supriya couple photo" loading="lazy">
+        </a>
+        <div class="memory-content">
+          <div class="memory-symbol">♡</div>
+          <div class="memory-label">Our Love Story</div>
+          <h3>Made for Each Other</h3>
+          <div class="memory-divider"></div>
+          <p class="memory-quote">“Two Hearts, One Promise, A Lifetime of Love.”</p>
+          <p class="memory-tamil">இரண்டு இதயங்கள், ஒரே வாக்குறுதி, வாழ்நாள் முழுவதும் காதல்!</p>
+        </div>
+      </article>
+
+      <!-- ENGAGEMENT PHOTO -->
+      <article class="memory-card engagement">
+        <span class="memory-number">02</span>
+        <a class="memory-photo" href="2.jpeg" target="_blank" rel="noopener">
+          <img src="2.jpeg" alt="Naveen and Supriya engagement photo" loading="lazy">
+        </a>
+        <div class="memory-content">
+          <div class="memory-symbol">💍</div>
+          <div class="memory-label">24 October 2026</div>
+          <h3>A Promise of Forever</h3>
+          <div class="memory-divider"></div>
+          <p class="memory-quote">“Today, we promise. Tomorrow, we begin forever.”</p>
+          <p class="memory-tamil">இன்று ஒரு வாக்குறுதி; நாளை முதல் வாழ்நாள் முழுவதும் இணைந்து பயணிப்போம்!</p>
+        </div>
+      </article>
+
+      <!-- WEDDING PHOTO -->
+      <article class="memory-card wedding">
+        <span class="memory-number">03</span>
+        <a class="memory-photo" href="3.jpeg" target="_blank" rel="noopener">
+          <img src="3.jpeg" alt="Naveen and Supriya wedding photo" loading="lazy">
+        </a>
+        <div class="memory-content">
+          <div class="memory-symbol">✦</div>
+          <div class="memory-label">25 October 2026</div>
+          <h3>Our Forever Begins</h3>
+          <div class="memory-divider"></div>
+          <p class="memory-quote">“Two Souls, One Beautiful Journey. And so our forever begins…”</p>
+          <p class="memory-tamil">இன்றுமுதல் நம் வாழ்நாள் பயணம் ஒன்றாகத் தொடங்குகிறது!</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  Made with <span class="heart">♥</span> for
+  Naveen Kumar.P &amp; Supriya.S
+  <br>October 2026
+</footer>
+
+<script>
+const weddingDate = new Date(2026, 9, 25, 7, 45, 0).getTime();
+
+function updateCountdown() {
+  const distance = weddingDate - Date.now();
+
+  if (distance <= 0) {
+    ["days", "hours", "minutes", "seconds"].forEach(id => {
+      document.getElementById(id).textContent = "0";
+    });
+    return;
+  }
+
+  document.getElementById("days").textContent =
+    Math.floor(distance / 86400000);
+
+  document.getElementById("hours").textContent =
+    Math.floor((distance / 3600000) % 24);
+
+  document.getElementById("minutes").textContent =
+    Math.floor((distance / 60000) % 60);
+
+  document.getElementById("seconds").textContent =
+    Math.floor((distance / 1000) % 60);
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
